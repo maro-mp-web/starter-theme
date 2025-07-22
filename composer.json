@@ -1,0 +1,16 @@
+
+{
+  "name": "mpweb/starter-theme",
+  "description": "Starter WordPress tema s OOP strukturom i autoloadom",
+  "type": "wordpress-theme",
+  "autoload": {
+    "psr-4": {
+      "Starter\\": "src/"
+    }
+  },
+  "require": {
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^10.0"
+  }
+}

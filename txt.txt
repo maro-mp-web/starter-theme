@@ -1,0 +1,41 @@
+📁 Struktura foldera tvoje starter teme:
+csharp
+Kopiraj
+Uredi
+starter/
+├── src/                         # OOP PHP klase (autoloaded)
+│   ├── Theme/
+│   │   ├── Setup.php
+│   │   ├── Enqueue.php
+│   │   └── CustomPostType.php
+│   └── init.php                 # pokreće sve klase
+│
+├── public/                      # buildani assets
+│   ├── css/
+│   ├── js/
+│   └── images/
+│
+├── templates/                   # dijelovi layouta
+│   ├── partials/
+│   │   ├── header.php
+│   │   └── footer.php
+│   └── page-home.php
+│
+├── assets/                      # izvorni CSS/JS
+│   ├── css/
+│   │   └── main.css             # koristi Tailwind direktive
+│   ├── js/
+│   │   └── main.js              # Alpine.js i ostalo
+│   └── images/
+│
+├── functions.php                # pokreće `src/init.php`
+├── index.php                    # WP fallback
+├── style.css                    # info za WP (Theme Name, itd.)
+├── screenshot.png               # prikaz teme u WP-u
+│
+├── composer.json                # autoload konfiguracija
+├── gulpfile.js                  # Gulp build proces
+├── package.json                 # Tailwind, Gulp i JS paketi
+├── tailwind.config.js
+├── postcss.config.js
+└── .gitignore

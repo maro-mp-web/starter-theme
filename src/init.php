@@ -1,8 +1,21 @@
 <?php
 
+namespace Starter;
+
 use Starter\Theme\Setup;
-// use Starter\Theme\Enqueue;
+use Starter\Theme\Assets;
 
 new Setup();
-// new Enqueue();
-error_log('Setup klasa instancirana'); // zapis u error log
+
+class Init
+{
+    public static function registerServices(): void
+    {
+        error_log('Registering services...');
+        $assets = new Assets();
+        $assets->register();
+    }
+}
+
+
+Init::registerServices();

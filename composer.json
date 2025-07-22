@@ -12,5 +12,10 @@
   },
   "require-dev": {
     "phpunit/phpunit": "^10.0"
-  }
+  },
+  "scripts": {
+  "build:css": "postcss ./assets/css/main.css -o ./public/css/main.css --watch"
+}
+
+
 }
